@@ -29,6 +29,8 @@ body{
      .cartao_conteudo p{
      margin-top: 1rem;
      padding: 2rem;
+     transform-style: preserve-3d;
+     transition:transform 300ms ease-in-out;
      }
 
      .cartao_conteudo h3{
@@ -50,7 +52,9 @@ body{
      color: var(--card-back-color);
      font-weight:700;
      }
-
+    .cartao:hover .cartao_conteudo{
+        transform: rotateY(180deg);
+    }
     footer{
         background-color: black;
         color: white;
